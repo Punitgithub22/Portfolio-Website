@@ -1,0 +1,420 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap") ;*/
+/* @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"); */
+/* download source code pro light 300 */
+/* @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro:wght@300&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap");  */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  /* body {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 400;
+  } */
+  
+  /* Now includes google fonts named: Fira Sans:Regular 400,click on import */
+  .sidebar {
+    position: absolute;
+    /* background-color: #F2906C; */
+    background-color: #001f3f;
+    /* width: 400px; */
+    font-family: "Fira Sans", sans-serif;
+    font-size: 20px;
+    max-height: 100%;
+    transition: transform 0.3s ease-in;
+  }
+  
+  .sidebar nav {
+    padding: 30px;
+  }
+  
+  .sidebar nav li {
+    list-style: none;
+    padding: 25px;
+  }
+  
+  .sidebar nav li a {
+    text-decoration: none;
+    color: white;
+    font-family: 600;
+  }
+  
+  .main {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Fira Sans", sans-serif;
+    background-color: #ffffff;
+  }
+  
+  
+  .Container {
+    display: flex;
+  }
+  
+  .infoContainer {
+    display: flex;
+    justify-content: space-around;
+    /* The CSS justify-content property defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container. */
+    /* background-color: yellow; */
+    height: 100vh;
+    width: 70vw;
+    margin: 60px auto;
+background-color: transparent;
+    /* margin: auto; is used to make container center*/
+  }
+  
+  .devInfo {
+    font-size: 14px;
+    display: flex;
+    /* align-items: center; */
+    /* it vertically align item center */
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Times New Roman", Times, serif;
+    height: 70vh;
+    width: 40vw;
+
+  }
+  
+  .hello {
+    font-size: 3em;
+    margin-top: 16px;
+    /* color: #000000; */
+    font-weight: bolder;
+  }
+  .name {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: "Fira Sans", sans-serif;
+    /* color: #63b3d0; */
+    margin-top: 10px;
+  }
+  /* now we will animate character using @keyframe */
+  
+  .animate-character {
+    /* text-transform: uppercase; */
+    background-image: linear-gradient(
+      -100deg,
+      #000000 0%,
+      rgb(71, 226, 177) 29%,
+      rgb(83, 168, 106) 67%,
+      rgb(43, 51, 62) 100%
+    );
+    /* ################################################### */
+    /*Here we are using animation for our text 
+  @keyframes
+  animation-name
+  animation-duration
+  animation-delay
+  animation-iteration-count
+  animation-direction
+  animation-timing-function
+  animation-fill-mode
+  animation */
+    background-size: 200% auto;
+    color: #000000;
+    background-clip: text;
+    /* The background-clip property defines how far the background (color or image) should extend within an element. */
+    /* text-fill-color: transparent; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* animation: textclip  */
+    animation: textclip 2s ease-in-out 2s infinite alternate-reverse;
+    /* display: inline-block; */
+    font-size: 24px;
+    font-weight: bolder;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
+  /* ################################################### */
+  .about {
+    font-size: 2em;
+    /* background-color: #71DDB8; */
+    /* color: white; */
+    font-weight: bolder;
+    /* margin-right: 400px; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .moreabout {
+    font-weight: bold;
+    /* margin-top: 25px; */
+    /* color: #63B3D0; */
+    /* color: #fcfeff; */
+    font-family: "Times New Roman", Times, serif;
+    /* line-height: 20px; */
+    font-size: 1.1em;
+    max-width: 100%;
+  }
+  
+  
+  .moreabout p {
+    margin: 0; /* Remove any default margin */
+    color: #001f3f;
+    line-height: 25px;
+    /* margin-top: 15px; */
+    margin-bottom: 15px;
+    
+  }
+    /* applying psuedo */
+    .moreabout::first-letter {
+        color: darkgray;
+        font-size: 1.8em;
+      }
+    .moreabout::first-line {
+        color: #000000;
+        /* font-variant: small-caps; */
+        font-weight: 400;
+        font-size: 1.2em;
+     }
+      
+  
+  
+  
+  .buttons {
+    margin-top: 1.5em;
+    font-size: 7px;
+  }
+  
+  .btn {
+    padding: 8px;
+    border-radius: 14px;
+    color: white;
+    background-color: #f2906c;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 5px 5px;
+    cursor: pointer;
+    border: solid 2px white;
+  }
+  
+  .btn-sn {
+    /* font-size: 10px;
+      padding: 7px 13px;
+      margin: 10px 0; */
+    font-size: 17px;
+    padding: 5px 22px;
+    margin: 11px 0;
+    width: 101px;
+  }
+  
+  .btn:hover {
+    background-color: black;
+    /* color: white; */
+  }
+  
+  .devPic img {
+    height: 30vh;
+  
+    /* height similar to .infocontainer */
+  }
+  
+  /* ##########################Contact's css use in same style.css############### */
+  .contactform {
+    font-family: "Fira Sans", sans-serif;
+    padding: 0 34px;
+    margin-top: 50px;
+    margin-left: 50px;
+    color: #63b3d0;
+  }
+  
+  .contactform h1 {
+    font-family: "Source Code Pro", monospace;
+    /* text-align: center; */
+    /* padding: 20px 0; */
+  }
+  
+  .contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contactform form div input {
+    /* width: 10vw; */
+    border-radius: 8px;
+    margin: 6px 0;
+    padding: 3px;
+  }
+  .contactform form {
+    margin: 0 40px;
+  }
+  
+  #emailHelp {
+    font-size: 10px;
+    color: white;
+    margin: 0 5px;
+    text-decoration: underline;
+  }
+  
+  #form-check {
+    flex-direction: row;
+  }
+  
+  #form-check input {
+    width: 25px;
+    height: 15px;
+    margin-top: 3px;
+  }
+  
+  /* .form-check-label{
+      margin-left: 12px;
+      padding-top: 2px;
+  } */
+  #clientenquiry {
+    width: 24vw;
+    height: 16vh;
+  }
+  
+  /* Blog.html#########CSS####### */
+  .blogItem {
+    margin: 20px;
+    font-family: "Fira Sans", sans-serif;
+  }
+  
+  .blogContainer {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  
+  .blogContainer h1 {
+    font-family: "Fira Sans", sans-serif;
+    margin: 23px;
+    color: #63b3d0;
+  }
+  
+  .blogItem p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 17px;
+    color: white;
+  }
+  
+  /* #######################intro.html's css############### */
+  h1 {
+    font-family: "Fira Sans", sans-serif;
+    margin: 23px;
+  }
+  
+  p {
+    font-family: "Josefin Slab", serif;
+    color: white;
+  }
+  
+  .intro {
+    margin-top: 50px;
+    margin-left: 50px;
+    background: #010815e2;
+  }
+  
+  .intro h2 {
+    font-family: "Fira Sans", sans-serif;
+    margin: 12px;
+    color: #e78967;
+  }
+  
+  .intro p {
+    margin: 18px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 17px;
+  }
+  
+  .skill {
+    width: 150px;
+    height: 6px;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .skillcontainer {
+    padding: 12px;
+  }
+  
+  .skillItem {
+    display: flex;
+    align-items: center;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    color: #5ba5c0;
+    margin-top: 10px;
+  }
+  
+  /* now we'll make percentage for skils */
+  .eighty {
+    width: 200px;
+    background-color: #71ddb8;
+    border: 2px solid white;
+  }
+  
+  .seventy {
+    width: 150px;
+    background-color: greenyellow;
+    border: 2px solid white;
+  }
+  
+  .sixty {
+    width: 100px;
+    background-color: #d33d29;
+    border: 2px solid white;
+  }
+  
+  /*we are making a class named sidebargo to hide sidebar  */
+  .sidebargo {
+    transform: translate(-443px, 0);
+    /* The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis). */
+    /* we will put transition on transform */
+    position: absolute;
+  }
+  
+  /* ##########ham menu and close icon css################ */
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 71px;
+    left: 5px;
+  }
+  
+  .close {
+    margin-left: 155px;
+    /* filter: grayscale(20%); */
+    filter: opacity(0.5) drop-shadow(0 0 0 #fff);
+    
+  }
+  
+  .ham {
+    /* filter: grayscale(20%); */
+    filter: opacity(0.5) drop-shadow(0 0 0 #e78967);
+  }
+  
+  /* ###############mediaquery for responsive website used for mobile & tablet */
+  @media (max-width: 990px) {
+    /* .sidebar{
+          transform: translate(-443px, 0);
+          position: absolute;
+      } */
+    .buttons {
+      font-size: 6px;
+    }
+    .devInfo {
+      font-size: 10px;
+    }
+    .devPic {
+      display: none;
+    }
+  
+    .intro,
+    .blogContainer,
+    .contactform {
+      margin: 8px;
+    }
+  }
+  
